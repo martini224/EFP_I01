@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+
+    <title>Batterie</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta charset="UTF-8">
+
+    <link rel="stylesheet" media="screen" href="css/bootstrap.min.css">
+    <link rel="stylesheet" media="screen" href="css/all.min.css">
+    <link rel="stylesheet" media="screen" href="css/batterie.css">
+
+    <script type="text/javascript" src="js/popper.min.js"></script>
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/batterie.js"></script>
+
+    <script type="text/javascript">
+
+        window.addEventListener("DOMContentLoaded", (event) => {
+
+            initialiserGestionnaireBatterie(document.getElementById('batterie_container'));
+
+        });
+
+    </script>
+
+</head>
+<body>
+
+    <div id="batterie_container" class="d-flex flex-column align-items-center justify-content-center mt-5 mb-5">
+
+        <div>
+            <i id="en_charge" class="fas fa-bolt d-none"></i>
+            <i id="batterie_niveau" class="d-none"></i>
+        </div>
+
+        <p id="batterie_niveau_pourcent"></p>
+
+    </div>
+
+</body>
+</html>

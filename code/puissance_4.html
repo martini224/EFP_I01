@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+
+    <title>Puissance 4</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta charset="UTF-8">
+
+    <link rel="stylesheet" media="screen" href="css/bootstrap.min.css">
+    <link rel="stylesheet" media="screen" href="css/all.min.css">
+    <link rel="stylesheet" media="screen" href="css/puissance_4.css">
+
+    <script type="text/javascript" src="js/popper.min.js"></script>
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+
+    <script type="text/javascript">
+
+        window.addEventListener("DOMContentLoaded", (event) => {
+
+        });
+
+    </script>
+
+</head>
+
+<body>
+
+    <h1>Puissance 4</h1>
+
+    <div id="initConnect4" class="connect4">
+
+        <div id="state_container" class="d-none"></div>
+
+        <div id="player_container"></div>
+
+        <div id="game_container"></div>
+
+        <button id="new-game" type="button" class="btn btn-secondary">Nouvelle partie</button>
+
+    </div>
+
+    <!--
+        Retirer class="d-none" pour faire apparaitre le tableau sur le navigateur. C'est un exemple de ce à quoi
+        peut ressembler le code html du puissance 4.
+    !-->
+
+    <table class="d-none">
+        <tr>
+            <th><i class="fas fa-arrow-circle-down"></i></th>
+            <th><i class="fas fa-arrow-circle-down"></i></th>
+        </tr>
+        <tr>
+            <td>
+                <div></div>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <div class="red"></div>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <div class="yellow"></div>
+            </td>
+        </tr>
+    </table>
+
+</body>
+</html>
