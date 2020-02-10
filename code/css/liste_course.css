@@ -1,0 +1,42 @@
+
+.article-input ul {
+    list-style-type:none;
+    padding : 5px;
+}
+
+.article-input ul > li {
+    padding : 5px;
+    cursor: pointer;
+    border-bottom: 1px solid silver;
+}
+
+.article-input ul > li:hover {
+    background-color: grey;
+    color : white;
+}
+
+
+.list-anchor {
+    margin-bottom: 25px;
+}
+
+.list-anchor > div {
+    padding : 15px;
+    border-bottom: 1px solid silver;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.list-anchor > div > span {
+    flex-grow: 1;
+}
+
+.list-anchor > div > i{
+    margin-right : 5px;
+}
+
+
+.red {
+    color : red;
+}

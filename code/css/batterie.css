@@ -1,0 +1,24 @@
+
+#batterie_container i {
+    font-size: xx-large;
+}
+
+#batterie_container p {
+    font-size: large;
+}
+
+#batterie_container .fa-battery-empty {
+    color : red;
+}
+
+#batterie_container .fa-battery-quarter {
+    color : orangered;
+}
+
+#batterie_container .fa-battery-half {
+    color : orange;
+}
+
+#batterie_container .fa-battery-three-quarters {
+    color : green;
+}

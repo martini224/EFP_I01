@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+    <head>
+
+        <title>Actualiser la date</title>
+
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <meta charset="UTF-8">
+
+        <link rel="stylesheet" media="screen" href="css/styles_1.css">
+
+        <script type="text/javascript" src="js/exemple_date_2.js"></script>
+
+        <script type="text/javascript">
+
+            window.addEventListener("DOMContentLoaded", (event) => {
+
+                // la fonction document.querySelector permet de selection un élément du DOM avec les même sélecteurs
+                // qu'utilisés dans le CSS
+                // Pour sélectionner plusieurs éléments : document.querySelectorAll("p");
+                displayDateInRealTime(document.querySelector("#demo"));
+
+            });
+
+        </script>
+
+    </head>
+
+    <body>
+
+    <h2>Exemple date 2</h2>
+
+    <p id="demo"></p>
+
+    </body>
+</html>

@@ -1,0 +1,54 @@
+
+h1 {
+    text-align: center;
+}
+
+table {
+    margin-bottom: 25px;
+}
+
+th, td {
+    width : 50px;
+    height: 50px;
+}
+
+td {
+    background-color: #005cbf;
+}
+
+th button {
+    padding: 0 !important;
+    margin-left : 7px;
+}
+
+th i {
+    font-size: 32px;
+}
+
+td > div {
+    background-color: white;
+    border-radius: 50%;
+    width : 42px;
+    height: 42px;
+    margin : auto;
+}
+
+td > div.yellow {
+    background-color: yellow;
+}
+
+td > div.red {
+    background-color: red;
+}
+
+.connect4 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.connect4 > div {
+    margin: 10px;
+}
+

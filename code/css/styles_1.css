@@ -1,0 +1,15 @@
+
+div {
+    margin: 25px;
+}
+
+div > button {
+    font-size: large;
+    padding: 5px;
+}
+
+#demo {
+    padding: 10px;
+    text-align: center;
+    border: 1px solid black;
+}

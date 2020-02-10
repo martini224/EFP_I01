@@ -1,0 +1,215 @@
+{"categories":[
+	{
+		"id":-1,
+		"name":"Hors catégorie"
+	},
+	{
+		"id": 0,
+		"name":"Fruits et Légumes",
+		"articles":[
+			"Pommes",
+			"Poires",
+			"Bananes",
+			"Citrons",
+			"Salade",
+			"Tomates",
+			"Carottes",
+			"Courgettes",
+			"Pommes de terre",
+			"Oignons",
+			"Poireaux"
+		]
+	},
+	{
+		"id": 1,
+		"name":"Conserves",
+		"articles":[
+			"Mais",
+			"Petits pois",
+			"Haricots verts",
+			"Sauce tomate",
+			"Thon",
+			"Pâté",
+			"Olives",
+			"Cornichons",
+			"Plats cuisines"
+		]
+	},
+	{
+		"id": 2,
+		"name":"Petit-déj / Goûter",
+		"articles":[
+			"Café",
+			"Cacao",
+			"Thé",
+			"Céréales",
+			"Confiture",
+			"Miel",
+			"Pâte à tartiner",
+			"Brioche",
+			"Biscottes",
+			"Pain de mie",
+			"Gâteaux",
+			"Chocolat",
+			"Bonbons"
+		]
+	},
+	{
+		"id": 3,
+		"name":"Bébé",
+		"articles":[
+			"Lait",
+			"Biscuits",
+			"Petits pots",
+			"Compotes",
+			"Couches",
+			"Eau minérale"
+		]
+	},
+	{
+		"id": 4,
+		"name":"Crêmerie",
+		"articles":[
+			"Œufs",
+			"Beurre",
+			"Crème fraîche",
+			"Fromage",
+			"Yaourts",
+			"Pâte à tarte"
+		]
+	},
+	{
+		"id": 5,
+		"name":"Viande",
+		"articles":[
+			"Bœuf",
+			"Veau",
+			"Porc",
+			"Volailles",
+			"Lardons",
+			"Jambon",
+			"Charcuterie"
+		]
+	},
+	{
+		"id": 6,
+		"name":"Poisson",
+		"articles":[
+			"Saumon",
+			"Bâtons de crabe",
+			"Crevettes",
+			"Sardines",
+			"Maquereaux"
+		]
+	},
+	{
+		"id": 7,
+		"name":"Epicerie",
+		"articles":[
+			"Pâtes",
+			"Riz",
+			"Purée",
+			"Lentilles",
+			"Soupes",
+			"Epices",
+			"Poivre /sel",
+			"Moutarde",
+			"Mayonnaise",
+			"Ketchup",
+			"Huile",
+			"Vinaigre",
+			"Farine",
+			"Sucre",
+			"Sucre vanillé",
+			"Levure",
+			"Biscuits apéro",
+			"Pain"
+		]
+	},
+	{
+		"id": 8,
+		"name":"Surgelés",
+		"articles":[
+			"Légumes",
+			"Frites",
+			"Glaces",
+			"Pizzas",
+			"Viande",
+			"Poisson"
+		]
+	},
+	{
+		"id": 9,
+		"name":"Boissons",
+		"articles":[
+			"Eau",
+			"Lait",
+			"Sodas",
+			"Jus de fruit",
+			"Sirop",
+			"Bière",
+			"Vin",
+			"Apéritifs"
+		]
+	},
+	{
+		"id": 10,
+		"name":"Hygiène",
+		"articles":[
+			"Gel douche",
+			"Shampoing",
+			"Brosse à dents",
+			"Dentifrice",
+			"Coton",
+			"Coton-tige",
+			"Déo",
+			"Gel coiffant",
+			"Rasoirs",
+			"Mousse à raser",
+			"Démaquillant",
+			"Dissolvant",
+			"Protection périodique",
+			"Mouchoirs"
+		]
+	},
+	{
+		"id": 11,
+		"name":"Entretien",
+		"articles":[
+			"Eponges",
+			"Sacs poubelle",
+			"Papier alu",
+			"Cellophane",
+			"Essuie-tout",
+			"Javel",
+			"Gel WC",
+			"Produit sol",
+			"Produit SDB",
+			"Produit vitres",
+			"Liquide vaisselle",
+			"Lessive",
+			"Adoucissant",
+			"Papier toilette"
+		]
+	},
+	{
+		"id": 12,
+		"name":"Maison",
+		"articles":[
+			"Serviettes en papier",
+			"Piles",
+			"Ampoules",
+			"Bougies",
+			"Enveloppes"
+		]
+	},
+	{
+		"id": 13,
+		"name":"Animaux",
+		"articles":[
+			"Croquettes",
+			"Litière",
+			"Boîtes"
+		]
+	}
+]}

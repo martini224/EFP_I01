@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>Syntaxe</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta charset="UTF-8">
+	
+<script>
+
+function myFunction() {
+
+	// écrire un commentaire, c'est à dire du code qui ne sera ignoré par le navigateur.
+
+	/*
+	Ceci est un bloque commentaire.
+	*/
+  
+	/*
+	 * Debugger son code
+	 */
+	 
+	// F12 sur votre navigateur pour ouvrir la console.
+	// console.log("bonjour"); pour afficher bonjour dans la console.
+	 
+  
+	/*
+	* LES VARIABLES
+	*/
+
+	var nomDeLaVariable;
+
+	nomDeLaVariable = 3; // assignation
+	nomDeLaVariable += 3; // addition en forme courte
+
+	let n = 0.5;
+	n = n + 3 - 3 + (2 * (5 / 2));
+
+	// ** exponentiel
+	// % modulo
+
+	n++; // incrémentation
+	n--; // décrémentation
+
+	let texte = "text"; // string / texte
+	texte = 'text';
+   
+   
+	texte = 'bonjour' + ' ' + "le monde"; // concaténation.
+
+	// excercice quel sera le resultat de : 
+	let x = 5 + 5;
+	let y = "5" + 5;
+	let z = "Hello" + 5;
+
+	texte.length; // longueur du string
+	
+	
+	/*
+	* LES COMPARATEURS
+	*/
+
+	let a = 1;
+	let b = 2;
+
+	let aText = '1';
+
+	// égalité
+
+	a == b; // false
+	a === b; // false
+
+	a == aText; // true
+	a === aText; // false
+
+	// inégalité
+
+	a != b; // true
+	a !== b; //true 
+
+	a != aText; // false
+	a !== aText; // true
+
+	a < b; // true
+	a <= b; // true
+	a <= aText; // true
+
+	a > b ? "a" : "b"; // ternaire
+
+	a < b && a == aText; // AND
+	a < b || a == aText; // OR
+	!(a < b); // NOT
+
+	// Condition : 
+
+	if(a < b)
+	{
+		// la condition est vraie.
+		alert("Vrai");
+	}
+	else
+	{
+		// la condition est fausse.
+		alert("Faux");
+	}
+
+	// Switch
+	switch (new Date().getDay()) {
+	  case 0:
+		day = "Dimanche";
+		break;
+	  case 1:
+		day = "Lundi";
+		break;
+	  case 2:
+		 day = "Mardi";
+		break;
+	  case 3:
+		day = "Mercredi";
+		break;
+	  case 4:
+		day = "Thursday";
+		break;
+	  case 5:
+		day = "Friday";
+		break;
+	  case 6:
+		day = "Saturday";
+	}
+	console.log(day); // Affiche le nom du jour
+	
+	// Pour en savoir plus sur les dates : https://www.w3schools.com/js/js_dates.asp
+  
+  /*
+   * TYPE DE DONNEES
+   */
+  
+   
+   // string une chaine de caractères
+   // number un nombre 1, 1202015, -1, -5.21245
+   // boolean true ou false
+   // undefined type non défini qui indique que la variable n'est pas définie.
+   // function une fonction
+   // object un objet
+   
+   // Vérifier le type d'une variable avec typeof : 
+   
+   let myVar;
+   
+   typeof myVar; // undefined
+   
+   myVar = 1;
+   typeof myVar; // number
+   
+   myVar = function(i){
+	return i++;
+   }
+   typeof myVar; // function
+   
+   myVar = {nom: "Martin", prenom: "Rouffiange"};
+   typeof myVar; // object
+   
+   
+   /*
+	* Les fonctions
+	*/
+
+	
+	// Fonction de conversion fahrenheit / celcius
+	function toCelsius(fahrenheit) {
+	  return (5 / 9) * (fahrenheit - 32);
+	}
+	
+	toCelsius(10); // renvoie -12.222222222222223
+	
+	// Opérations sur les nombres
+	
+	isNaN(10); // renvoie false car 10 est un nombre
+	isNaN("x"); // renvoie true car x n'est pas un nombre
+	
+	Number("10"); 
+	Number("10.33");
+	parseInt("10");
+	parseFloat("10.33");
+	
+	// Opération mathématique de base
+	
+	// arrondi supérieur
+	Math.round(4.7);    // renvoie 5
+	// puissance
+	Math.pow(8, 2);      // renvoie 64
+	// racine carrée
+	Math.sqrt(64);      // renvoie 8
+	// arrondi supérieur
+	Math.ceil(4.4);     // renvoie 5
+	// arrondi inférieur
+	Math.floor(4.7);    // renvoie 4
+	// génére un nombre réel pseudo-aléatoire entre 0 (inclus) et 1 (exclus)
+	Math.random();
+	// génére un nombre entier (grâce à Math.floor()) pseudo-aléatoire entre 0 (inclus) et 1 (exclus)
+	Math.floor((Math.random() * 10) + 1);
+	
+	// Voir plus : https://www.w3schools.com/js/js_math.asp
+	
+	// Opération sur les chaines de caractères (string)
+	
+	let str = "Apple, Banana, Kiwi";
+	
+	// Réduction de la chaine
+	str.substring(7, 13); // renvoie un nouveau string Banana
+	
+	// Remplacement du premier élément
+	str.replace('Banana', 'Banane') // renvoie un nouveau "Apple, Banane, Kiwi"
+	
+	// Remplacement de tout
+	str = 'pomme pomme';
+	str.replace(/pomme/g, 'poire') // renvoie un nouveau string "poire poire"
+	
+	// toUpperCase : Mettre la chaine en majuscule
+	str.toUpperCase(); // renvoie "POMME POMME"
+   
+   	// toLowerCase : Mettre la chaine en majuscule
+	str.toLowerCase(); // renvoie "pomme pomme"
+	
+	// trim : Supprime les espaces du début de du string et de la fin
+	str = '         pomme   ';
+	str.trim(); // renvoie "pomme"
+	
+	// split : Séparation
+	str = 'pomme pomme pomme';
+	str.split(" ");  // renvoie un tableau ['pomme', 'pomme', 'pomme']
+	
+	// voir plus : https://www.w3schools.com/js/js_string_methods.asp
+   
+   
+	/*
+	* Les tableaux (array)
+	*/
+
+	let names = ["Martin", "Jérome", "Henri"];
+
+	// Déclaration d'un tableau vide
+	names = [];
+	names = new Array();
+	names = new Array("Martin", "Jérome", "Henri");
+
+	// Acceder à un élément du tableau :
+	names[0]; // renvoi Martin
+	names[3]; // renvoi undefined
+
+	// Nombre d'élements dans le tableau : 
+	names.length; // renvoi 3
+
+	if(names.length > 3){
+		names[3];
+	}
+
+	// Manipuler les tableaux.
+
+	// Join : fusion.
+	let fruits = ["Banane", "Orange", "Pomme", "Mangue"];
+	fruits.join(" / "); // renvoie un string : Banane / Orange / Pomme / Mangue"
+
+	// shift : retirer
+	fruits.shift(); // retire "Banane"
+
+	// pop : retirer
+	fruits.pop(); // retire "Mangue"
+
+	// unshift : ajouter
+	fruits.unshift("Citron"); // ajoute citron au tableau
+
+	// push : ajouter
+	fruits.push("Citron"); // ajoute orange au tableau
+
+	// concat fusionner
+	let names2 = ["Robin", "Morgan"];
+	names.concat(names); // renvoie un nouveau tableau "Martin", "Jérome", "Henri", "Robin", "Morgan"
+
+	// sort : trier
+	names2.sort(); // le tableau names2 devient : "Morgan", "Robin"
+
+	// reverse : trier
+	names2.reverse(); // le tableau names2 devient : "Robin", "Morgan"
+
+	// voir plus : https://www.w3schools.com/Js/js_array_methods.asp
+   
+   
+	/*
+	* Les boucles
+	*/
+
+	let i = 0;
+	while(i < 10) {
+		console.log(i); // affiche 0, 1, 2, .. jusqu'a 9 dans la console
+		i++;
+	}
+
+	for(let j = 0; j < 10; j++) {
+		console.log(j); 
+	}
+
+	// Avec les tableaux
+	fruits = ["Banane", "Orange", "Pomme", "Mangue"];
+	for(iFruit = 0; iFruit < fruits.length; iFruit++) {
+		console.log(fruits[iFruit]);
+	}
+
+	for(iFruit in fruits) {
+		console.log(fruits[iFruit]);
+	}
+
+	// Fonctions des tableaux
+	fruits.forEach(fruit => console.log(fruit)); // affiche chaque élément du tableau dans la console
+
+	// map : renvoie une copie modifiée du tableau
+	let numbers = [45, 4, 9, 16, 25];
+	numbers.map(number => number * 2); // renvoie un nouveau tableau 90,8,18,32,50
+
+	// filter :
+	numbers = [45, 4, 9, 16, 25];
+	numbers.filter(number => number > 18);  // renvoie un nouveau tableau 45,25 (les éléments plus grand que 18)
+
+	// voir plus : https://www.w3schools.com/Js/js_array_iteration.asp
+	
+
+	/*
+	* Les objects
+	*/
+
+	let object_player = {nom: 'jouer', level: 3};
+
+	class Player {
+
+		constructor(name, level){
+			this.name = name;
+			this.level = level;
+		}
+		
+		displayName(){
+			console.log(this.name);
+		}
+
+	}
+
+	// Création, instanciation
+	object_player = new Player('jouer', 3);
+	// Appel à une méthode
+	object_player.displayName();
+	// Appel à un attribut
+	object_player.name;
+
+
+	/*
+	 * Le DOM : la structure du code HTML en JS
+	 */
+
+	// Sélection d'un élément
+	document.getElementById('id'); 
+	document.getElementsByClassName('classe');
+	document.querySelector('#id');
+	document.querySelectorAll('.classe');
+
+	// Voir tous les selecteurs : https://www.w3schools.com/cssref/css_selectors.asp
+
+	let element = document.querySelector('#demo');
+	// Depuis un élément
+	element.querySelector('#id');
+
+	// Afficher ou modifier le contenu textuel d'un élément
+	element.innerText; // pour l'afficher
+	element.innerText = "test";
+
+	// Afficher ou modifier le code HTML d'un élément
+	element.innerHTML; // pour l'afficher
+	//element.innerHTML = "<div><p></p></div>"; // modifie le code HTML de l'élément
+
+	// Accéder à un attribut
+	element.getAttribute('id'); // renvoie l'id de l'élement, ici 'demo'
+
+	// Accéder au CSS
+	element.style.cssText = "color: blue; border: 1px solid black"; 
+	element.setAttribute("style", "color:red; border: 1px solid blue;");
+	element.style.color = "blue";
+
+	// Accéder aux classes
+	element.classList;
+	element.classList.add('une_classe');
+	element.classList.remove('une_classe');
+	element.classList.toggle('une_classe');
+	element.classList.contains('une_classe');
+
+	// Création d'élément
+	let div = document.createElement('div');
+	// Ajout d'un élément
+	document.querySelector('body').appendChild(div);
+	div.innerText = 'Nouvel élément';
+
+	// Parcourir les noeuds 
+	element.parentElement;
+	element.previousSibling;
+	element.previousElementSibling;
+	element.nextSibling;
+	element.nextElementSibling;
+	element.childNodes;
+	element.children;
+	 
+	/*
+	 * Les évènements
+	 */
+
+	let boutton = document.querySelector('#btn');
+	boutton.addEventListener('click', reaction);
+	boutton.addEventListener('click', function(){
+
+	});
+
+	function reaction() {
+		element.innerText = "modification";
+	}
+
+	// click
+	// dblclick
+	// contextmenu
+	// focus
+	// focusout
+	// fullscreenchange
+	// keydown
+	// keyup
+	// keypress
+	// change
+	// chargingchange
+
+	// Voir tous les types d'évènements : https://developer.mozilla.org/fr/docs/Web/Events
+}
+</script>
+</head>
+<body>
+
+<h2>JavaScript in Head</h2>
+
+<p id="demo" class="demo_classe">
+	A Paragraph.
+	<span>span</span>
+</p>
+
+<button type="button" onclick="myFunction()">Try it</button>
+
+<button id="btn" type="button">Btn</button>
+
+</body>
+</html> 
