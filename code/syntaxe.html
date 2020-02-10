@@ -11,10 +11,10 @@
 
 function myFunction() {
 
-	// écrire un commentaire, c'est à dire du code qui ne sera ignoré par le navigateur.
+	// écrire un commentaire.
 
 	/*
-	Ceci est un bloque commentaire.
+		Ceci est un bloque commentaire.
 	*/
   
 	/*
@@ -48,11 +48,6 @@ function myFunction() {
    
    
 	texte = 'bonjour' + ' ' + "le monde"; // concaténation.
-
-	// excercice quel sera le resultat de : 
-	let x = 5 + 5;
-	let y = "5" + 5;
-	let z = "Hello" + 5;
 
 	texte.length; // longueur du string
 	
@@ -129,8 +124,7 @@ function myFunction() {
 		day = "Saturday";
 	}
 	console.log(day); // Affiche le nom du jour
-	
-	// Pour en savoir plus sur les dates : https://www.w3schools.com/js/js_dates.asp
+
   
   /*
    * TYPE DE DONNEES
@@ -200,8 +194,7 @@ function myFunction() {
 	Math.random();
 	// génére un nombre entier (grâce à Math.floor()) pseudo-aléatoire entre 0 (inclus) et 1 (exclus)
 	Math.floor((Math.random() * 10) + 1);
-	
-	// Voir plus : https://www.w3schools.com/js/js_math.asp
+
 	
 	// Opération sur les chaines de caractères (string)
 	
@@ -231,8 +224,25 @@ function myFunction() {
 	str = 'pomme pomme pomme';
 	str.split(" ");  // renvoie un tableau ['pomme', 'pomme', 'pomme']
 	
-	// voir plus : https://www.w3schools.com/js/js_string_methods.asp
-   
+	
+	// Fonctions asynchrone
+
+	function resolveAfter2Seconds() {
+		return new Promise(resolve => {
+			setTimeout(() => {
+			  resolve('resolved');
+			}, 2000);
+		});
+	}
+
+	async function asyncCall() {
+		console.log('calling');
+		const result = await resolveAfter2Seconds();
+		console.log(result);
+	}
+
+	asyncCall();
+	
    
 	/*
 	* Les tableaux (array)
@@ -246,11 +256,11 @@ function myFunction() {
 	names = new Array("Martin", "Jérome", "Henri");
 
 	// Acceder à un élément du tableau :
-	names[0]; // renvoi Martin
-	names[3]; // renvoi undefined
+	names[0]; // renvoie Martin
+	names[3]; // renvoie undefined
 
 	// Nombre d'élements dans le tableau : 
-	names.length; // renvoi 3
+	names.length; // renvoie 3
 
 	if(names.length > 3){
 		names[3];
@@ -284,7 +294,6 @@ function myFunction() {
 	// reverse : trier
 	names2.reverse(); // le tableau names2 devient : "Robin", "Morgan"
 
-	// voir plus : https://www.w3schools.com/Js/js_array_methods.asp
    
    
 	/*
@@ -293,7 +302,7 @@ function myFunction() {
 
 	let i = 0;
 	while(i < 10) {
-		console.log(i); // affiche 0, 1, 2, .. jusqu'a 9 dans la console
+		console.log(i); // affiche 0, 1, 2, .. jusqu'à 9 dans la console
 		i++;
 	}
 
@@ -322,7 +331,6 @@ function myFunction() {
 	numbers = [45, 4, 9, 16, 25];
 	numbers.filter(number => number > 18);  // renvoie un nouveau tableau 45,25 (les éléments plus grand que 18)
 
-	// voir plus : https://www.w3schools.com/Js/js_array_iteration.asp
 	
 
 	/*
@@ -361,8 +369,7 @@ function myFunction() {
 	document.getElementsByClassName('classe');
 	document.querySelector('#id');
 	document.querySelectorAll('.classe');
-
-	// Voir tous les selecteurs : https://www.w3schools.com/cssref/css_selectors.asp
+n
 
 	let element = document.querySelector('#demo');
 	// Depuis un élément
@@ -406,6 +413,7 @@ function myFunction() {
 	element.childNodes;
 	element.children;
 	 
+	 
 	/*
 	 * Les évènements
 	 */
@@ -419,20 +427,19 @@ function myFunction() {
 	function reaction() {
 		element.innerText = "modification";
 	}
+	
+	
+	/*
+	 * JSON
+	 */
 
-	// click
-	// dblclick
-	// contextmenu
-	// focus
-	// focusout
-	// fullscreenchange
-	// keydown
-	// keyup
-	// keypress
-	// change
-	// chargingchange
+	let json = '{"nom":"martin", "age":25, "skills":["JavaScript", "HTML", "CSS"]}';
+	
+	let objectFromJson = JSON.parse(json); // transforme le string json en un objet JS
+	
+	json = JSON.stringify(objectFromJson); // transforme un objet JS en un string json correspondant
+	
 
-	// Voir tous les types d'évènements : https://developer.mozilla.org/fr/docs/Web/Events
 }
 </script>
 </head>
