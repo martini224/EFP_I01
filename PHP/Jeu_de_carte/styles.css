@@ -1,0 +1,13 @@
+.card-container {
+    display: flex;
+    align-items: center;
+}
+
+.card-comparator {
+    margin-left : 35px;
+    margin-right : 35px;
+}
+
+.nav-container div {
+    margin-top : 15px;
+}
